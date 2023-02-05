@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Roboto:ital,wght@1,300&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/**** COMMON ****/
+html, body, .wrapper {
+  height: 100%;
+}
+
+/**** KEYFRAME - ANIMATION ****/
+@-webkit-keyframes rotate {
+  100% {
+    background-position: 15% 50%;
+  }
+}
+@keyframes rotate {
+  100% {
+    background-position: 15% 50%;
+  }
+}
+/**** BODY ****/
+body {
+  -webkit-animation: rotate 6s infinite alternate linear;
+          animation: rotate 6s infinite alternate linear;
+  background-image: url("../assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #000;
+  display: grid;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0 24px;
+  place-items: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1.25rem;
+  margin: 0 20px;
+  padding: 70px 30px 44px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 3;
+}
+.card__title {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+.card__description {
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 30px;
+}
+.card__form {
+  display: grid;
+  gap: 26px;
+  margin: 0;
+  width: 100%;
+}
+.card__form input {
+  border: 2px solid #ebebeb;
+  font-family: inherit;
+  font-size: 16px;
+  height: 47px;
+  padding: 0 16px;
+  width: 100%;
+}
+.card__form button {
+  background: #216ce7;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #f9f9f9;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  height: 40px;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+  transition: all 0.375s;
+  width: 90%;
+}
+.card__form button:hover {
+  cursor: pointer;
+}
+.card__form a {
+  color: #216ce7;
+  font-size: 16px;
+  margin-bottom: 6px;
+  text-align: left;
+  text-decoration: none;
+}
+
+/**** MEDIA QUERIES ****/
+@media (width >= 500px) {
+  body {
+    padding: 0;
+  }
+  .card {
+    margin: 0;
+    width: 400px;
+  }
+}/*# sourceMappingURL=styes.css.map */

@@ -1,0 +1,65 @@
+@mixin button {
+  background: $bg-color-blue;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #f9f9f9;
+  font-family: inherit;
+  font-size: $font-size_1;
+  font-weight: 600;
+  height: 40px;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+  transition: all 0.375s;
+  width: 90%;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+@mixin loginCard {
+    background: $white-color;
+    border-radius: 1.25rem;
+    margin: 0 20px;
+    padding: 70px 30px 44px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 3;
+    &__title {
+        font-size: $font-size_2;
+        font-weight: 600;
+        margin: 0 0 12px;
+    }
+    &__description {
+        color: $text-color-h3;
+        font-size: $font-size_1;
+        font-weight: 500;
+        margin: 0 0 30px;
+    }
+    &__form {
+        display: grid;
+        gap: 26px;
+        margin: 0;
+        width: 100%;
+        & input {
+            border: 2px solid #ebebeb;
+            font-family: inherit;
+            font-size: $font-size_1;
+            height: 47px;
+            padding: 0 16px;
+            width: 100%;
+        }
+        & button {
+            @include button;
+        }
+        & a {
+            color: $bg-color-blue;
+            font-size: $font-size_1;
+            margin-bottom: 6px;
+            text-align: left;
+            text-decoration: none;
+        }
+    }
+}

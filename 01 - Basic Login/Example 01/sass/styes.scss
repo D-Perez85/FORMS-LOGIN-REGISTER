@@ -1,0 +1,45 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/**** COMMON ****/
+html, body, .wrapper {
+    height: 100%;
+}
+/**** KEYFRAME - ANIMATION ****/
+@keyframes rotate {
+  100% {
+    background-position: 15% 50%;
+  }
+}
+/**** BODY ****/
+body {
+  animation: rotate 6s infinite alternate linear;
+  background-image: url("../assets/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $black-color;
+  display: grid;
+  font-family: $font-family_3;
+  margin: 0;
+  padding: 0 24px;
+  place-items: center;
+}
+.card {
+  @include loginCard;
+}
+/**** MEDIA QUERIES ****/
+@media (width >= 500px) {
+  body {
+    padding: 0;
+  }  
+  .card {
+    margin: 0;
+    width: 400px;
+  }
+}
+
