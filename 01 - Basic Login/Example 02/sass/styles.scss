@@ -1,0 +1,114 @@
+@import "variables.scss";
+@import "mixin.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body,.wrapper {
+    height: 100%;
+  }
+  @keyframes rotate {
+    100% {
+      background-position: 15% 50%;
+    }
+  }
+  body {
+    animation: rotate 6s infinite alternate linear;
+    background-color: #da99ff;
+    background-image: radial-gradient(
+        at 88% 0%,
+        hsla(327, 67%, 64%, 1) 0px,
+        transparent 50%
+      ),
+      radial-gradient(at 63% 46%, hsla(307, 76%, 61%, 1) 0px, transparent 50%),
+      radial-gradient(at 95% 53%, hsla(89, 91%, 67%, 1) 0px, transparent 50%),
+      radial-gradient(at 79% 83%, hsla(170, 86%, 65%, 1) 0px, transparent 50%),
+      radial-gradient(at 74% 93%, hsla(71, 93%, 75%, 1) 0px, transparent 50%),
+      radial-gradient(at 52% 13%, hsla(110, 83%, 72%, 1) 0px, transparent 50%),
+      radial-gradient(at 30% 80%, hsla(263, 79%, 66%, 1) 0px, transparent 50%);
+    color: $black-color;
+    display: grid;
+    font-family: $font-family_1;
+    margin: 0;
+    padding: 0 24px;
+    place-items: center;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 1.25rem;
+    left: 50%;
+    padding: 70px 30px 44px;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    translate: -50% -50%;
+    width: 90%;
+    z-index: 3;
+    & img {
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        object-fit: cover;
+        width: 120px;
+    }  
+    & h2 {
+        font-size: $font-size_3; 
+        font-weight: 600;
+        margin: 0 0 30px;
+    }
+    & h3 {
+        color: $text-color-h3;
+        font-size: $font_size_1;
+        font-weight: 500;
+        margin: 0 0 6px;
+    }
+    &__form {
+        display: grid;
+        gap: 30px;
+        margin: 0;
+        place-items: center;
+        width: 100%;
+        & input, button {
+            @include commonSettings;
+        }
+        & input {
+            @include input; 
+        }
+        & button {
+            @include button; 
+        }
+        & a {
+            color: $bg-color-smoke;
+            font-size: $font_size_1;
+            text-align: left;
+            text-decoration: none;
+        }
+    }
+    
+  }
+/**** MEDIAS QUERIES ****/
+  @media (width >= 450px) {
+    .card {
+      width: 380px;
+    }
+  }
+  @media (width >= 700px) {
+    .card {
+        border-radius: 0;
+        height: 100%;
+        left: auto;
+        margin: 0;
+        padding-top: 240px;
+        right: 0;
+        top: 0;
+        translate: 0 0;
+    }
+  }
+  @media (width >= 1200px) {
+    .card {
+      width: 25%;
+    }
+  }
+  

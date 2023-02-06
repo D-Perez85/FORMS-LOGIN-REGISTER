@@ -1,0 +1,29 @@
+@mixin commonSettings{
+    font-family: inherit;
+    height: 56px;
+    outline: none;
+    padding: 0;
+}
+@mixin input{
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    font-size: $font-size_2;
+    padding: 0;
+    text-align: center;
+    width: 240px;
+}
+@mixin button{
+    background: $bg-color-violet;
+    border: 0;
+    border-radius: 10px;
+    color: $bg-color-smoke;
+    font-size: $font_size_1;
+    font-weight: 600;
+    height: 56px;
+    letter-spacing: 2px;
+    width: 100%;
+    &:hover {
+        cursor: pointer;
+      }
+}

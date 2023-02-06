@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, .wrapper {
+  height: 100%;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    background-position: 15% 50%;
+  }
+}
+
+@keyframes rotate {
+  100% {
+    background-position: 15% 50%;
+  }
+}
+body {
+  -webkit-animation: rotate 6s infinite alternate linear;
+          animation: rotate 6s infinite alternate linear;
+  background-color: #da99ff;
+  background-image: radial-gradient(at 88% 0%, hsl(327deg, 67%, 64%) 0px, transparent 50%), radial-gradient(at 63% 46%, hsl(307deg, 76%, 61%) 0px, transparent 50%), radial-gradient(at 95% 53%, hsl(89deg, 91%, 67%) 0px, transparent 50%), radial-gradient(at 79% 83%, hsl(170deg, 86%, 65%) 0px, transparent 50%), radial-gradient(at 74% 93%, hsl(71deg, 93%, 75%) 0px, transparent 50%), radial-gradient(at 52% 13%, hsl(110deg, 83%, 72%) 0px, transparent 50%), radial-gradient(at 30% 80%, hsl(263deg, 79%, 66%) 0px, transparent 50%);
+  color: #000;
+  display: grid;
+  font-family: "Euclid Circular A";
+  margin: 0;
+  padding: 0 24px;
+  place-items: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  left: 50%;
+  padding: 70px 30px 44px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  translate: -50% -50%;
+  width: 90%;
+  z-index: 3;
+}
+.card img {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 120px;
+}
+.card h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 30px;
+}
+.card h3 {
+  color: rgba(0, 0, 0, 0.38);
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 0 6px;
+}
+.card__form {
+  display: grid;
+  gap: 30px;
+  margin: 0;
+  place-items: center;
+  width: 100%;
+}
+.card__form input, .card__form button {
+  font-family: inherit;
+  height: 56px;
+  outline: none;
+  padding: 0;
+}
+.card__form input {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  padding: 0;
+  text-align: center;
+  width: 240px;
+}
+.card__form button {
+  background: #8d4fff;
+  border: 0;
+  border-radius: 10px;
+  color: #f9f9f9;
+  font-size: 16px;
+  font-weight: 600;
+  height: 56px;
+  letter-spacing: 2px;
+  width: 100%;
+}
+.card__form button:hover {
+  cursor: pointer;
+}
+.card__form a {
+  color: #f9f9f9;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+}
+
+/**** MEDIAS QUERIES ****/
+@media (width >= 450px) {
+  .card {
+    width: 380px;
+  }
+}
+@media (width >= 700px) {
+  .card {
+    border-radius: 0;
+    height: 100%;
+    left: auto;
+    margin: 0;
+    padding-top: 240px;
+    right: 0;
+    top: 0;
+    translate: 0 0;
+  }
+}
+@media (width >= 1200px) {
+  .card {
+    width: 25%;
+  }
+}/*# sourceMappingURL=styles.css.map */
