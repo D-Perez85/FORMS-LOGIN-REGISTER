@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Roboto:ital,wght@1,300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, .wrapper {
+  height: 100%;
+}
+
+@-webkit-keyframes gradient {
+  100% {
+    background-size: 4000px 1000px;
+  }
+}
+
+@keyframes gradient {
+  100% {
+    background-size: 4000px 1000px;
+  }
+}
+body {
+  -webkit-animation: gradient 10s infinite alternate linear;
+          animation: gradient 10s infinite alternate linear;
+  background-image: url("../assets/bg.svg");
+  background-position: -500px 0;
+  background-size: 2000px 1000px;
+  color: #f9f9f9;
+  display: grid;
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0 24px;
+  place-items: center;
+}
+
+.container {
+  border-radius: 22px;
+  left: 50%;
+  padding: 70px 30px 44px;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  translate: -50% -50%;
+  width: 90%;
+  z-index: 3;
+}
+.container__avatar {
+  background: linear-gradient(-45deg, #157ae1, #c7a1ff);
+  border-radius: 50%;
+  height: 120px;
+  margin: 0 auto 16px;
+  padding: 2px;
+  width: 120px;
+}
+.container__avatar img {
+  border: 4px solid #161616;
+  border-radius: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.container h2 {
+  font-size: 36px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+.container h3 {
+  color: rgba(255, 255, 255, 0.38);
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0 0 30px;
+}
+.container__form {
+  display: grid;
+  gap: 24px;
+  margin: 0;
+  place-items: center;
+  width: 100%;
+}
+.container__form .textbox {
+  position: relative;
+  width: 100%;
+}
+.container__form .textbox span {
+  color: rgba(255, 255, 255, 0.38);
+  left: 16px;
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+}
+.container__form input, .container__form button {
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+  height: 42px;
+  outline: none;
+  padding: 0;
+  width: 100%;
+}
+.container__form input {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  color: inherit;
+  font-size: 18px;
+  padding: 0 20px 0 50px;
+}
+.container__form input:focus {
+  border-color: rgb(152, 120, 120);
+}
+.container__form button {
+  background: rgb(46, 50, 54);
+  border: 0;
+  color: #f9f9f9;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.container__form button:hover {
+  cursor: pointer;
+}
+.container__form a {
+  color: #fff;
+  font-size: 16px;
+  text-align: left;
+  text-decoration: none;
+}
+
+@media (width >= 450px) {
+  .container {
+    width: 380px;
+  }
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,46 @@
+@mixin commonAttributes{
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: $font-size_1;
+    height: 42px;
+    outline: none;
+    padding: 0;
+    width: 100%;
+}
+@mixin input{
+    background: transparent;
+    border: 2px solid $color-grey;
+    color: inherit;
+    font-size: $font-size_2;
+    padding: 0 20px 0 50px;
+    &:focus {
+            border-color: rgb(152, 120, 120);
+    }   
+}
+@mixin button {
+    background: $bg-btn;
+    border: 0;
+    color: $text-color-btn;
+    font-weight: 600;
+    letter-spacing: 2px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+@mixin textbox{
+    position: relative;
+    width: 100%;     
+    & span {
+        color: $text-color-black; 
+        left: 16px;
+        position: absolute;
+        top: 50%;
+        translate: 0 -50%;
+    }
+}
+@mixin a{
+    color: $text-color-white;
+    font-size: $font-size_1;
+    text-align: left;
+    text-decoration: none;
+}

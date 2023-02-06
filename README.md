@@ -22,7 +22,7 @@ Estas instrucciones te permitirán obtener una copia del proyecto en funcionamie
 ### `Clonar` 
 Clonar el proyecto utilizando git clone  dentro de tu entorno local para poder obtener el codigo fuente. 
 ```
-git clone https://github.com/D-Perez85/LOGIN-FORMS.git
+git clone https://github.com/D-Perez85/FORMS-LOGIN-REGISTER.git
 ```
 
 ### `Run`
