@@ -6,7 +6,7 @@ BASIC-LOGIN
 
 ## Instalacion 🚀
 
-Eel codigo fuente de este directorio se encuentra disponible dentro del repositorio gral (README.md raiz). 
+El codigo fuente de este directorio se encuentra disponible dentro del repositorio gral (README.md raiz). 
 
 ```
 git clone https://github.com/D-Perez85/FORMS-LOGIN-REGISTER.git
