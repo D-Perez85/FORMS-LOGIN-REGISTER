@@ -1,0 +1,57 @@
+@mixin button{
+    align-items: center;
+    background-color: $color-btn-white;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);
+    color: #102770;
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    font-size: 13px;
+    font-weight: 600;
+    height: 44px;
+    justify-content: center;
+    letter-spacing: 1px;
+    padding: 0 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 200ms linear;
+    -webkit-transition : all 200ms linear;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -ms-flex-pack: center;
+      &:active, :focus{  
+        background-color: #102770;
+        box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+        color: $color-btn-white;
+      }
+      &:hover{  
+        background-color: #102770;
+        box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);
+        color: $color-btn-white;
+      }
+}
+@mixin commonCards{
+  backface-visibility: hidden;
+  background-color: $bg-color-card;
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: 300%;
+  border-radius: 6px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform-style: preserve-3d;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  width: 100%;
+}
